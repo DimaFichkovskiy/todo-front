@@ -15,7 +15,7 @@ export const SetNewTaskProject = ({ isQuickAdd, project, setProject }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [parentPosition, setParentPosition] = useState({});
 
-  const defaultProjectValue = { selectedProjectName: "Inbox", selectedProjectId: "", defaultProject: true };
+  const defaultProjectValue = { selectedProjectName: "Пошта", selectedProjectId: "", defaultProject: true };
   useEffect(() => {
     if (!project.defaultProject) {
       setPopupSelectedProject(project);
@@ -46,7 +46,7 @@ export const SetNewTaskProject = ({ isQuickAdd, project, setProject }) => {
         isQuickAdd ? showQUickAddDropDown(e.currentTarget.getBoundingClientRect()) : setShowDialog("SET_PROJECT");
       }}
     >
-      {popupSelectedProject?.selectedProjectName === "Inbox" ? (
+      {popupSelectedProject?.selectedProjectName === "Пошта" ? (
         <InboxIcon width="18px" height="18px" fill="#5297ff" />
       ) : (
         <Dot color={`${popupSelectedProject?.projectColour?.hex}`} width={17} height={17} />

@@ -34,7 +34,7 @@ export const LoginForm = () => {
     if (emailRegex.test(email)) {
       setEmailIsValid(true);
     } else {
-      setErrorMessage("You entered an invalid email");
+      setErrorMessage("Ви ввели не правильний email");
       setEmailIsValid(false);
       return;
     }
@@ -43,11 +43,11 @@ export const LoginForm = () => {
       signinWithEmail(email, password).catch((error) => {
         console.log("ERROR", error);
         if (error.code === "auth/wrong-password") {
-          setErrorMessage("Wrong email or password");
+          setErrorMessage("Не правильний email або пароль");
           setShowDefaultErrorMessage(true);
         }
         if (error.code === "auth/user-not-found") {
-          setErrorMessage("Invalid user");
+          setErrorMessage("Користувач не знайдений");
           setShowDefaultErrorMessage(true);
         }
       });
@@ -80,7 +80,7 @@ export const LoginForm = () => {
         </div>
         <div className="field">
           <label className="label" htmlFor="password">
-            Password
+            Пароль
           </label>
           <div className="toggle_password">
             <input
@@ -88,7 +88,7 @@ export const LoginForm = () => {
               type={showPassword ? "text" : "password"}
               name="password"
               id="password"
-              placeholder="Enter password"
+              placeholder="Підтвердити пароль"
               value={formState.password}
               onChange={(e) => onChangeHandler(e)}
             />
@@ -98,14 +98,14 @@ export const LoginForm = () => {
           </div>
         </div>
         <button className="auth-button submit-button" onClick={(e) => handleSubmit(e)}>
-          Log in
+          Увійти
           {authenticating && <Spinner light />}
         </button>
 
         <hr />
 
         <p>
-          Dont have an account? <Link to="/signup">Sign Up</Link>
+          Ви не маєте аккаунту? <Link to="/signup">Зареєструватися</Link>
         </p>
       </form>
     </>

@@ -1,5 +1,5 @@
-import { ReactComponent as LogoDark } from "../../assets/svg/logo-mobile-dark.svg";
-import { ReactComponent as Logo } from "../../assets/svg/logo-mobile.svg";
+import { ReactComponent as LogoDark } from "../../assets/svg/taskMasterLogo.svg";
+import { ReactComponent as Logo } from "../../assets/svg/taskMasterLogo.svg";
 import { Spinner } from "../Spinner";
 import { useThemeContextValue } from "../../context";
 import "./main.scss";

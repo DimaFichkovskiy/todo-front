@@ -14,14 +14,14 @@ import "./styles/main.scss";
 import "./styles/light.scss";
 
 const taskEditorPlaceholders = [
-  "Prepare for family lunch",
-  "Call Adenike",
-  "Renew Gym membership",
-  "Pickup kids from school",
-  "Design meeting by 10:30am",
-  "Standup by 9am",
-  "Task name",
-  "Finish Art project",
+  "Приготувати сніданок",
+  "Зателефонувати мамі",
+  "Піти в спортзал",
+  "Забрати дітей з школи",
+  "Зустріч на 10:30",
+  "Прокинутися о 9",
+  "Назва завдання",
+  "Закінчити проєкт",
 ];
 
 const randomPlaceholder = taskEditorPlaceholders[Math.floor(Math.random() * taskEditorPlaceholders.length)];
@@ -133,7 +133,7 @@ export const TaskEditor = ({ column, isQuickAdd, isEdit, task, closeOverlay }) =
               <use xlinkHref={`${featherIcon}#plus`}></use>
             </svg>
           </div>
-          <span>Add Task</span>
+          <span>Додати завдання</span>
         </div>
       ) : (
         <></>
@@ -155,7 +155,7 @@ export const TaskEditor = ({ column, isQuickAdd, isEdit, task, closeOverlay }) =
               required
               type="text"
               maxLength="30"
-              placeholder={`e.g '${randomPlaceholder}'`}
+              placeholder={`Наприклад '${randomPlaceholder}'`}
             />
 
             <div className="add-task__attributes">
@@ -169,13 +169,13 @@ export const TaskEditor = ({ column, isQuickAdd, isEdit, task, closeOverlay }) =
 
           <div className={`add-task__actions ${isQuickAdd ? "quick-add__actions" : ""}`}>
             <button className=" action add-task__actions--add-task" type="submit" disabled={isEdit ? false : disabled}>
-              {isEdit ? "Save" : "Add task"}
+              {isEdit ? "Зберегти" : "Додати завдання"}
             </button>
             <button
               className={` action  ${isLight ? "action__cancel" : "action__cancel--dark"}`}
               onClick={(event) => (isQuickAdd ? closeOverlay() : showAddTaskFormHandler(event))}
             >
-              Cancel
+              Закрити
             </button>
           </div>
         </form>

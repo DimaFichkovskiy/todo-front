@@ -2,12 +2,14 @@
   font-family: "Graphik";
   src: url("../../assets/fonts/Graphik-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Graphik-semibold";
   src: url("../../assets/fonts/Graphik-Semibold.woff2") format("woff2");
 }
 
 @import "../../scss/mixins.scss";
+
 .landing-page {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +17,7 @@
   font-family: "Graphik", sans-serif;
   width: 100%;
   position: relative;
+
   .intro__header {
     width: 100%;
     height: 4rem;
@@ -36,8 +39,9 @@
     margin: 0 auto;
     max-width: 1088px;
     padding: 0 1rem;
-    @include respond(tab-land) {
-    }
+
+    @include respond(tab-land) {}
+
     &--group {
       display: flex;
       align-items: center;
@@ -45,6 +49,7 @@
       &__wrapper {
         align-items: center;
         display: flex;
+
         &:nth-child(2) {
           @include respond(tab-land) {
             display: none;
@@ -52,6 +57,7 @@
         }
       }
     }
+
     &--item {
       height: 3rem;
       display: flex;
@@ -63,11 +69,10 @@
       a {
         height: -webkit-fill-available;
       }
-
-      &:last-of-type {
-       
-      }
     }
+
+
+
     &--link:hover {
       color: #1f1f1f;
       border-bottom: #e44232 1px solid;
@@ -91,15 +96,20 @@
 
   .nav-logo {
     margin-right: 1rem;
+
     .logo__desktop {
+      margin-top: -25px;
+
       @include respond(phone) {
         display: none;
       }
     }
   }
 }
+
 .logo__mobile {
   display: none;
+
   @include respond(phone) {
     display: block;
     width: 32px;
@@ -112,9 +122,11 @@
   overflow: hidden;
   text-align: center;
   white-space: pre-line;
+
   @include respond(tab-port) {
     height: 100vh;
   }
+
   .intro__hero {
     padding: 8rem 1rem 0;
     -webkit-margin-after: -10rem;
@@ -124,12 +136,14 @@
     z-index: 2;
     white-space: pre-line;
     text-align: center;
+
     @include respond(phone) {
       padding-top: 200px;
     }
+
     &--cta {
       color: #fff;
-      background-color: #e44232;
+      background-color: #D67B19;
       font-size: 1rem;
       line-height: 1.25;
       letter-spacing: 0;
@@ -141,7 +155,7 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #e44232;
+      border: 1px solid #D47C1F;
       min-width: 100px;
     }
 
@@ -175,13 +189,16 @@
     max-inline-size: 46.8rem;
     margin-block-end: 1rem;
     letter-spacing: -0.02em;
+
     @include respond(tab-land) {
       width: 50%;
       font-size: 60px;
     }
+
     @include respond(tab-port) {
       width: 80%;
     }
+
     @include respond(phone) {
       font-size: 30px;
       width: 90%;

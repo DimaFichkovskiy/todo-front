@@ -1,8 +1,9 @@
 import illustration from "../../assets/svg/landing-illustration.webp";
 import { ReactComponent as LogoMobile } from "../../assets/svg/logo-mobile.svg";
-import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
+import { ReactComponent as Logo } from "../../assets/svg/taskMasterLogo.svg";
 import { Link } from "react-router-dom";
 import "./main.scss";
+
 export const LandingPage = () => {
   return (
     <main className="landing-page">
@@ -14,33 +15,30 @@ export const LandingPage = () => {
               <LogoMobile className="logo__mobile" />
             </div>
             <div className="intro__nav--group__wrapper">
-              {/* <div className="nav-logo__mobile">
-                  <LogoMobile />
-                </div> */}
               <Link className="intro__nav--item intro__nav--link" to="/">
-                Features
+                Функції
               </Link>
               <Link className="intro__nav--item intro__nav--link" to="/">
-                Templates
+                Шаблони
               </Link>
               <Link className="intro__nav--item intro__nav--link" to="/">
-                For Teams
+                Для команд
               </Link>
               <Link className="intro__nav--item intro__nav--link" to="/">
-                Resources
+                Ресурси
               </Link>
               <Link className="intro__nav--item intro__nav--link" to="/">
-                Pricing
+                Ціни
               </Link>
             </div>
           </div>
           <div className="intro__nav--group">
             <div className="intro__nav--group__wrapper">
               <Link className="intro__nav--item intro__nav--link" to="/signin">
-                Log in
+                Увійти
               </Link>
               <Link className="intro__nav--item intro__nav--link" to="/signup">
-                Sign up
+                Зареєструватися
               </Link>
             </div>
           </div>
@@ -50,13 +48,13 @@ export const LandingPage = () => {
       <section className="section__intro">
         <div className="intro__hero">
           <h1 className="hero-text">
-            Organize your <br /> work and life, finally.
+            Організуйте свою <br /> роботу та життя, нарешті.
           </h1>
           <h2 className="hero-text__sub">
-            Become focused, organized, and calm with Todoist. The world’s #1 task manager and to-do list app.
+            Станьте зосередженими, організованими та спокійними з TaskMaster. Найкращий у світі менеджер завдань та додаток для списків справ.
           </h2>
           <Link to="/signin" className="intro__hero--cta">
-                Start for free
+            Почати безкоштовно
           </Link>
         </div>
         <img src={illustration} className="intro__hero--illustration-1" alt="" width={1256} />

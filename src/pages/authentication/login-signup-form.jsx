@@ -14,7 +14,7 @@ export const LoginSignupForm = () => {
 
       <button className="google-auth auth-button" onClick={(e) => signinGoogle(e)}>
         <img src={GoogleLogo} alt="" />
-        <span>Continue with Google</span>
+        <span>Продовжити з Google</span>
       </button>
     </div>
   );

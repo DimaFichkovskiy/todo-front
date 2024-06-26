@@ -38,14 +38,14 @@ export const SetNewTaskProjectPopper = ({
       <div
         className="set-project__popper"
         // onClick={(event) => event.stopPropagation()}
-        style={{ top: `${targetedposition.y }px`, left: `${targetedposition.x}px` }}
+        style={{ top: `${targetedposition.y}px`, left: `${targetedposition.x}px` }}
       >
         <ul>
           <li className="set-project__popper--option" onClick={() => setProjectAsInbox()}>
             <div className="set-project__popper--option-icon">
               <InboxIcon fill="#FF9A14" />
             </div>
-            <p className="set-new-task__project--name">Inbox</p>
+            <p className="set-new-task__project--name">Пошта</p>
           </li>
           {projects &&
             projects.map((project) => (

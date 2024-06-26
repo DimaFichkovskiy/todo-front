@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./main.scss";
-import { ReactComponent as LogoSmall } from "../../assets/svg/logo-small.svg";
+import { ReactComponent as LogoSmall } from "../../assets/svg/taskMasterLogo.svg";
 import { LoginSignupForm } from "./login-signup-form";
 import { LoginForm } from "./login-form";
 import { SignupForm } from "./signup-form";
@@ -23,7 +23,7 @@ export const AuthenticationPage = () => {
                 <>
                   <LoginSignupForm />
                   <div className="separator">
-                    <div className="middle_separator">OR</div>
+                    <div className="middle_separator">або</div>
                   </div>
                   <LoginForm />
                 </>

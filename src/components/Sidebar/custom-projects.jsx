@@ -17,7 +17,7 @@ export const CustomProjects = () => {
           </svg>
         </div>
 
-        <div className="custom-project-group__name">Projects</div>
+        <div className="custom-project-group__name">Проєкти</div>
 
         <button
           className="custom-project-group__add-project"

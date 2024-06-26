@@ -12,19 +12,19 @@ export const SetNewTaskSchedule = ({ isQuickAdd, setSchedule, schedule }) => {
   };
 
   const getDateStyle = () => {
-    if (schedule?.day === "Today") {
+    if (schedule?.day === "Сьогодні") {
       let day = "date__today";
       return day;
     }
-    if (schedule?.day === "Tomorrow") {
+    if (schedule?.day === "Завтра") {
       let day = "date__tomorrow";
       return day;
     }
-    if (schedule?.day === "Weekend") {
+    if (schedule?.day === "Вихідні") {
       let day = "date__weekend";
       return day;
     }
-    if (schedule?.day === "Next week") {
+    if (schedule?.day === "Наступний тиждень") {
       let day = "date__next-week";
       return day;
     }
@@ -41,7 +41,7 @@ export const SetNewTaskSchedule = ({ isQuickAdd, setSchedule, schedule }) => {
       >
         <ScheduleIcon width={"18px"} height={"18px"} />
 
-        {schedule?.day === "" ? "Due date" : schedule?.day}
+        {schedule?.day === "" ? "Вибрати дату" : schedule?.day}
       </div>
       {showPopup && (
         <SetNewTaskSchedulePopper

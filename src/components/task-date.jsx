@@ -33,13 +33,13 @@ export const TaskDate = ({ date }) => {
   };
   const getDayName = () => {
     if (isToday) {
-      return "Today";
+      return "Сьогодні";
     }
     if (isTomorrow) {
-      return "Tomorrow";
+      return "Завтра";
     }
     if (isYesterday) {
-      return "Yesterday";
+      return "Вчора";
     }
     if (isWeekend) {
       return moment(date, moment.defaultFormat).format("dddd");

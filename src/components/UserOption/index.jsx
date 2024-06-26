@@ -49,14 +49,14 @@ export const UserOptions = ({ closeOverlay, xPosition, yPosition }) => {
               <use href={`${featherIcon}#${isLight ? "moon" : "sun"}`}></use>
             </svg>
 
-            <div className="user-options__item--content">{`${isLight ? "Dark" : "Light"}`} Mode</div>
+            <div className="user-options__item--content">{`${isLight ? "Темний" : "Світлий"}`} режим</div>
           </li>
           <li className="user-options__item" onClick={(e) => handleLogout(e)}>
             <svg className="user-options__icon" width="17" height="17" stroke="currentColor" fill="none" strokeWidth="1px">
               <use href={`${featherIcon}#log-out`}></use>
             </svg>
 
-            <div className="user-options__item--content">Log Out</div>
+            <div className="user-options__item--content">Вийти</div>
           </li>
         </ul>
       </div>

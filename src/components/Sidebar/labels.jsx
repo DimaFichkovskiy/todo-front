@@ -13,7 +13,7 @@ export const Labels = () => {
           </svg>
         </div>
 
-        <div className="custom-project-group__name">labels</div>
+        <div className="custom-project-group__name">мітка</div>
       </div>
       {showlabels && (
         <div className="custom-labels">

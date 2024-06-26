@@ -15,9 +15,9 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
     isEdit
       ? projectToEdit.projectColour
       : {
-          name: "Charcoal",
-          hex: "#808080",
-        }
+        name: "Charcoal",
+        hex: "#808080",
+      }
   );
   const [projectIsList, setProjectIsList] = useState(isEdit ? projectToEdit.projectIsList : true);
   const [showSelectColourDropdown, setShowSelectColourDropdown] = useState(false);
@@ -84,7 +84,7 @@ export const ProjectEditor = ({ closeOverlay, isEdit, projectToEdit }) => {
         <div className="add-project__modal--content">
           <form action="" autoComplete="off" onSubmit={(e) => addProjectHandler(e)}>
             <div className="add-project__form-group">
-              <label>Name</label>
+              <label>Назва</label>
               <input
                 className="add-project__project-name"
                 type="text"

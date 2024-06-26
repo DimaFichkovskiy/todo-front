@@ -41,31 +41,31 @@ export const EmptyState = () => {
       case "Today":
         return (
           <>
-            <p className="empty-state__header"> Get a clear view of the day ahead</p>
-            <p className="empty-state__body">All your tasks that are due today will show up here.</p>{" "}
+            <p className="empty-state__header"></p>
+            <p className="empty-state__body">Ваші завдання які потрібно буде виконати відображатимуться тут.</p>{" "}
             {/* <button onClick={()=> } className="empty-state__button">Add Task</button> */}
           </>
         );
       case "Inbox":
         return (
           <>
-            <p className="empty-state__header"> All clear</p>
-            <p className="empty-state__body">Looks like everything's organized in the right place.</p>
+            <p className="empty-state__header"> Завдань немає</p>
+            <p className="empty-state__body">Виглядає гарно, коли все в одному місці.</p>
           </>
         );
       case "Important":
         return (
           <>
-            <p className="empty-state__header"> High priority!</p>
-            <p className="empty-state__body">Tasks that you set to be important will show up here.</p>
+            <p className="empty-state__header"> Високий приорітет!</p>
+            <p className="empty-state__body">Важливі завдання відображатимуться тут.</p>
           </>
         );
 
       default:
         return (
           <>
-            <p className="empty-state__header"> Keep your tasks organized in projects</p>
-            <p className="empty-state__body">Group your tasks by goal or area of your life.</p>{" "}
+            <p className="empty-state__header"> Зберігайте організовано завдання з проєктів</p>
+            <p className="empty-state__body"></p>{" "}
           </>
         );
     }
@@ -82,7 +82,7 @@ export const EmptyState = () => {
           setTaskEditorToShow("NEW");
         }}
       >
-        Add Task
+        Додати завдання
       </button>
     </div>
   );

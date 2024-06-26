@@ -16,7 +16,7 @@ export const DefaultProjects = () => {
             <InboxIcon fill={`${isLight ? "#246fe0" : "#5297ff"}`} />
           </div>
 
-          <div className="project-group__name">Inbox</div>
+          <div className="project-group__name">Вхідні</div>
         </div>
 
         <ProjectTasksCounts isDefaultGroup name={"Inbox"} />
@@ -27,7 +27,7 @@ export const DefaultProjects = () => {
             <TodayIcon color={`${isLight ? "#058527" : "#25b84c"}`} />
           </div>
 
-          <div className="project-group__name">Today</div>
+          <div className="project-group__name">Сьогодні</div>
         </div>
 
         <ProjectTasksCounts isDefaultGroup name={"Today"} />
@@ -38,7 +38,7 @@ export const DefaultProjects = () => {
             <ScheduledIcon fill={`${isLight ? "#692fc2" : "#a970ff"}`} />
           </div>
 
-          <div className="project-group__name">Scheduled</div>
+          <div className="project-group__name">Плани</div>
         </div>
         <ProjectTasksCounts isDefaultGroup name={"Scheduled"} />
       </NavLink>
@@ -48,7 +48,7 @@ export const DefaultProjects = () => {
             <ImportantIcon stroke={`${isLight ? "#eb8909" : "#ff9a14"}`} />
           </div>
 
-          <div className="project-group__name">Important</div>
+          <div className="project-group__name">Важливі</div>
         </div>
 
         <ProjectTasksCounts isDefaultGroup name={"Important"} />

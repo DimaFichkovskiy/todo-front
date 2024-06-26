@@ -60,11 +60,11 @@ export const ConfrimDeleteProject = ({ projectId, closeOverlay }) => {
             </button>
           </header>
 
-          <div className="confirm-delete__content">Are you sure you want to delete {projectName}?</div>
+          <div className="confirm-delete__content">Ви впевнені що хочете видалити? {projectName}?</div>
           <footer>
-            <button className="action action__cancel--dark">Cancel</button>
+            <button className="action action__cancel--dark">Закрити</button>
             <button className="action action__delete-project" onClick={(e) => deleteHandler(e)}>
-              Delete
+              Видалити
             </button>
           </footer>
         </form>

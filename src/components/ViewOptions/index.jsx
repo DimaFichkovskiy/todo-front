@@ -44,7 +44,7 @@ export const ViewOptions = ({ closeOverlay, xPosition, yPosition, projectId }) =
               </svg>
             </div>
 
-            <span className="menu__list--content">Board</span>
+            <span className="menu__list--content">Дошка</span>
           </li>
         </ul>
       </div>

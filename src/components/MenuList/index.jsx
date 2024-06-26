@@ -138,7 +138,7 @@ export const MenuList = ({
                 <ArchiveIcon />
               </div>
 
-              <span className="menu__list--content">Archive Project</span>
+              <span className="menu__list--content">Архів проєктів</span>
             </li>
           )}
 
@@ -150,7 +150,7 @@ export const MenuList = ({
                 </svg>
               </div>
 
-              <span className="menu__list--content">{taskIsImportant ? "Remove" : "Add"} Importance </span>
+              <span className="menu__list--content">{taskIsImportant ? "Remove" : "Add"} Важливі </span>
             </li>
           )}
         </ul>
